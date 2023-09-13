@@ -1,0 +1,114 @@
+.header {
+  margin: 0 0 0 262px;
+  background-image: url('../../images/Ellipse.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 804px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: 26% 30% 14% auto;
+  grid-template-areas:
+    'logo illustration'
+    'title illustration'
+    'text illustration'
+    'button illustration';
+}
+
+.header__logo {
+  grid-area: logo;
+  margin-top: 123px;
+}
+.header__title {
+  z-index: 1;
+  margin-top: 30px;
+  margin-bottom: 0;
+  max-width: 420px;
+  grid-area: title;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 72px */
+  letter-spacing: -1.44px;
+}
+.header__text {
+  max-width: 410px;
+  margin-top: 34px;
+  margin-bottom: 0;
+  grid-area: text;
+  color: #21201f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+}
+.header__newPrice {
+  display: inline-block;
+  min-height: 33px;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-radius: 500px;
+  background: radial-gradient(
+    141.42% 141.42% at 100% 0%,
+    #e0b8ff 0%,
+    #b6b9ff 100%
+  );
+}
+.header__price {
+  display: inline-flex;
+  min-height: 33px;
+  text-decoration: line-through;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  margin-left: -25px;
+  padding-left: 40px;
+  padding-right: 12px;
+  border-radius: 500px;
+  color: #808080;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  border-radius: 500px;
+  border-radius: 500px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.63) 0%,
+      rgba(255, 255, 255, 0.63) 100%
+    ),
+    radial-gradient(141.42% 141.42% at 100% 0%, #e0b8ff 0%, #b6b9ff 100%);
+}
+.header__button {
+  padding: 0;
+  margin-top: 50px;
+  grid-area: button;
+  border-radius: 36px;
+  background: #ffde40;
+  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+  border-style: none;
+  width: 318px;
+  height: 65px;
+  color: #21201f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 91.667% */
+}
+.header__imgSmkt::before {
+  content: url('../../images/smkt.svg');
+}
+.header__imgSmkt {
+  grid-area: illustration;
+  position: relative;
+  top: 45px;
+  right: 138px;
+  height: 100%;
+  background-size: auto;
+  width: 800px;
+}
+.header__textСircle {
+  position: absolute;
+  top: 350px;
+  left: 230px;
+}
