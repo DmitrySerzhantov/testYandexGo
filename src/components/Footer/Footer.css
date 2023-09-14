@@ -1,0 +1,16 @@
+.footer {
+  margin-bottom: 128px;
+  max-width: 1440px;
+}
+.footer__text {
+  max-width: 69%;
+  margin: 0 auto;
+  color: #c5c5c5;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.footer__link {
+  color: #c5c5c5;
+}

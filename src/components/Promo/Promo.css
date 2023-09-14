@@ -1,0 +1,24 @@
+.Promo {
+  max-width: 59%;
+  margin: 180px 0 0 262px;
+}
+.Promo__title {
+  margin: 0;
+  max-width: 600px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 48px */
+  letter-spacing: -0.96px;
+}
+.Promo__foto01 {
+  position: relative;
+  background: url('../../images/01.png');
+  background-repeat: no-repeat;
+}
+.Promo__foto01::before {
+  content: url('../../images/GEOLOCATION.svg');
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

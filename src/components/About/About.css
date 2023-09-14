@@ -1,0 +1,31 @@
+.About {
+  max-width: 59%;
+  margin: 0 0 0 262px;
+}
+
+.About__title {
+  margin: 0;
+  max-width: 620px;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 56px */
+  letter-spacing: -1.12px;
+}
+.About__list {
+  margin: 35px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 12%;
+  row-gap: 14%;
+}
+
+.About__text {
+  margin: 14px 0 0 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+}

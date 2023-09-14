@@ -32,6 +32,7 @@
   letter-spacing: -1.44px;
 }
 .header__text {
+  z-index: 1;
   max-width: 410px;
   margin-top: 34px;
   margin-bottom: 0;
@@ -94,21 +95,22 @@
   font-style: normal;
   font-weight: 500;
   line-height: 22px; /* 91.667% */
+  cursor: pointer;
 }
-.header__imgSmkt::before {
-  content: url('../../images/smkt.svg');
-}
+
 .header__imgSmkt {
+  background-image: url('../../images/smkt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   grid-area: illustration;
   position: relative;
-  top: 45px;
-  right: 138px;
-  height: 100%;
-  background-size: auto;
-  width: 800px;
+
+  right: 310px;
+  width: 140%;
 }
 .header__textСircle {
   position: absolute;
-  top: 350px;
-  left: 230px;
+  top: 49%;
+  left: 28%;
 }
