@@ -1,5 +1,7 @@
 import logo from '../../images/logo/YandexGoRublack.svg';
 import textСircle from '../../images/logo/textСircle.svg';
+import smkt from '../../images/smkt.svg';
+
 
 function Header() {
   return (
@@ -13,6 +15,8 @@ function Header() {
       </p>
       <button className='header__button'>Стать частью клуба</button>
       <div id='imgSmkt' className='header__imgSmkt'>
+      <img  className='header__smkt' alt='textСircle' src={smkt} />
+
         <img className='header__textСircle' alt='textСircle' src={textСircle} />
       </div>
     </header>

@@ -1,0 +1,113 @@
+.Acquire {
+  max-width: 65%;
+  margin-top: 97px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.Acquire__block {
+  padding-left: 10px;
+}
+
+.Acquire__wrapper {
+  position: relative;
+  margin-left: -19%;
+  margin-top: -237px;
+}
+.Acquire__title {
+  margin: 0;
+  max-width: 400px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -0.96px;
+}
+.Acquire__title-two {
+  margin-top: 42px;
+}
+
+.Acquire__text {
+  margin-top: 35px;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  max-width: 415px;
+}
+
+.Acquire__logo {
+  background-image: url('../../images/Ellipse1973.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -15%;
+}
+.Acquire__logo-samocat {
+  margin-left: -120px;
+  margin-top: 50px;
+  max-width: 117%;
+}
+.Acquire__logo-samocat-2 {
+  max-width: 67%;
+  margin-left: 36%;
+  margin-top: 38%;
+}
+.Acquire__logo-plus {
+  position: absolute;
+  top: 38%;
+  left: 17%;
+  max-width: 55%;
+}
+
+.Acquire__button {
+  margin-top: 40px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  border-radius: 36px;
+  background: #ffde40;
+  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+  border-style: none;
+  padding: 24px 48px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .Acquire {
+    max-width: 88%;
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Acquire__title {
+    font-size: 32px;
+    letter-spacing: -0.64px;
+    max-width: 88%;
+  }
+  .Acquire__text {
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 120%;
+    max-width: 91.5%;
+  }
+  .Acquire__logo-samocat {
+    max-width: 112%;
+    margin-top: -1px;
+    margin-left: -8%;
+  }
+  .Acquire__title-two {
+    margin: 0;
+  }
+  .Acquire__wrapper {
+    display: none;
+  }
+  .Acquire__button {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 13px 86px;
+    margin-top: 31px;
+  }
+}

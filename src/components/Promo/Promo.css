@@ -1,5 +1,5 @@
 .Promo {
-  max-width: 59%;
+  max-width: 65%;
   margin: 180px 0 0 262px;
 }
 .Promo__title {
@@ -11,14 +11,139 @@
   line-height: 100%; /* 48px */
   letter-spacing: -0.96px;
 }
-.Promo__foto01 {
-  position: relative;
-  background: url('../../images/01.png');
-  background-repeat: no-repeat;
+.Promo__container {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 33px;
+  row-gap: 12px;
 }
-.Promo__foto01::before {
-  content: url('../../images/GEOLOCATION.svg');
+.Promo__text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  margin-top: 38px;
+  max-width: 46.8%;
+}
+.Promo__element {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.Promo__foto {
+  width: 134%;
+  border-radius: 60px;
+  transform: rotate(2deg);
+}
+.Promo__element_namber_one {
+  margin-top: 50px;
+  margin-left: -10px;
+  max-width: fit-content;
+}
+.Promo__element_namber_two {
+  margin-top: -160px;
+  max-width: fit-content;
+}
+.Promo__element_namber_three {
+  margin-left: -30px;
+  max-width: fit-content;
+}
+.Promo__element_namber_four {
+  margin-top: -208px;
+  margin-left: -10px;
+  max-width: fit-content;
+}
+
+.Promo__geolocation {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: -30%;
+  left: -53%;
+  max-width: 112%;
+}
+.Promo__logo2 {
+  position: absolute;
+  top: -21%;
+  right: -35%;
+  max-width: 112%;
+}
+
+.Promo__logo3 {
+  position: absolute;
+  top: 21%;
+  right: -50%;
+  max-width: 125%;
+}
+.Promo__scrol {
+  display: none;
+}
+.Promo__wrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Promo {
+    margin: 65px auto 0;
+    max-width: 83%;
+  }
+  .Promo__title {
+    font-size: 32px;
+    letter-spacing: -0.64px;
+  }
+  .Promo__text {
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 120%; /* 19.2px */
+    max-width: 100%;
+  }
+  .Promo__container {
+    display: none;
+  }
+  .Promo__wrapper {
+    display: block;
+    position: relative;
+  }
+  .Promo__foto-logo {
+    max-width: 58%;
+    position: absolute;
+    top: -78px;
+    right: -30px;
+  }
+  .Promo__foto-item {
+    border-style: none;
+    max-width: 112%;
+    margin-left: -5%;
+    margin-top: 45px;
+    border-radius: 50px;
+    display: block;
+  }
+
+  .Promo__scrol {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .Promo__scrol-left {
+    background-image: url('../../images/logo/arowleft.svg');
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-style: none;
+    cursor: pointer;
+  }
+  .Promo__scrol-left:disabled {
+    opacity: 0.5;
+  }
+  .Promo__scrol-right {
+    background-image: url('../../images/logo/arowright.svg');
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-style: none;
+    cursor: pointer;
+  }
+  .Promo__scrol-right:disabled {
+    opacity: 0.5;
+  }
 }

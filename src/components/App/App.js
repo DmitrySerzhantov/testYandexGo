@@ -3,6 +3,8 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import About from '../About/About';
 import Promo from '../Promo/Promo';
+import Acquire from '../Acquire/Acquire';
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <Header />
         <About />
         <Promo />
+        <Acquire />
         <Footer />
       </div>
     </div>

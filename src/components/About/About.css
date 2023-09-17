@@ -1,6 +1,6 @@
 .About {
-  max-width: 59%;
-  margin: 0 0 0 262px;
+  max-width: 64%;
+  margin: 0 auto;
 }
 
 .About__title {
@@ -18,7 +18,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 12%;
+  column-gap: 3%;
   row-gap: 14%;
 }
 
@@ -28,4 +28,35 @@
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 28.8px */
+  max-width: 83%;
+}
+
+@media (max-width: 768px) {
+  .About {
+    max-width: 83%;
+    margin: 0 auto;
+  }
+  .About__title {
+    margin-top: 35px;
+    font-size: 32px;
+    letter-spacing: -0.64px;
+  }
+  .About__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .About__item {
+    display: flex;
+   margin-left: 10px;
+   gap: 20px;
+  }
+  .About__logo {
+    max-width: 23%;
+  }
+  .About__text {
+    font-size: 16px;
+    line-height: 120%;
+    max-width: 70%;
+  }
 }

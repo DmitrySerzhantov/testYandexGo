@@ -1,13 +1,13 @@
 .header {
-  margin: 0 0 0 262px;
-  background-image: url('../../images/Ellipse.png');
-  background-position: center;
+  max-width: 64%;
+  max-height: 800px;
+  margin: 0 auto;
+  background-image: url('../../images/Ellipse.svg');
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 804px;
+  background-size: 100%;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: 26% 30% 14% auto;
+  grid-template-rows: 14% 43% 19% 10%;
   grid-template-areas:
     'logo illustration'
     'title illustration'
@@ -21,7 +21,7 @@
 }
 .header__title {
   z-index: 1;
-  margin-top: 30px;
+  margin-top: 128px;
   margin-bottom: 0;
   max-width: 420px;
   grid-area: title;
@@ -34,7 +34,7 @@
 .header__text {
   z-index: 1;
   max-width: 410px;
-  margin-top: 34px;
+  margin-top: 28px;
   margin-bottom: 0;
   grid-area: text;
   color: #21201f;
@@ -70,7 +70,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
   border-radius: 500px;
   border-radius: 500px;
   background: linear-gradient(
@@ -82,7 +82,7 @@
 }
 .header__button {
   padding: 0;
-  margin-top: 50px;
+  margin-top: 7px;
   grid-area: button;
   border-radius: 36px;
   background: #ffde40;
@@ -99,18 +99,74 @@
 }
 
 .header__imgSmkt {
-  background-image: url('../../images/smkt.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  grid-area: illustration;
   position: relative;
-
-  right: 310px;
-  width: 140%;
+  top: 44px;
+  right: 178px;
+}
+.header__smkt {
+  max-width: 180%;
 }
 .header__textСircle {
   position: absolute;
-  top: 49%;
-  left: 28%;
+  left: 50%;
+  top: 312%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 83%;
+    min-height: max-content;
+  }
+  .header__logo {
+    max-width: 36%;
+    margin-top: 32px;
+  }
+  .header__title {
+    font-size: 36px;
+    max-width: 50%;
+    margin-top: 27px;
+    letter-spacing: -0.64px;
+  }
+  .header__text {
+    font-size: 18px;
+    margin-top: 24px;
+  }
+  .header__newPrice {
+    min-height: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .header__price {
+    min-height: 24px;
+    font-size: 13px;
+    padding-right: 7px;
+    padding-left: 39px;
+    margin-left: -35px;
+  }
+  .header__smkt {
+    max-width: 113%;
+    margin-top: -5px;
+    margin-left: -24px;
+  }
+  .header__textСircle {
+    top: 48%;
+    left: 24%;
+    max-width: 27%;
+  }
+  .header__button {
+    padding: 13px 0;
+    z-index: 5;
+    position: fixed;
+    bottom: 30px;
+    left: auto;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 83%;
+    height: auto;
+    margin: 0;
+  }
 }

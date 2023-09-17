@@ -1,6 +1,6 @@
 .footer {
-  margin-bottom: 128px;
-  max-width: 1440px;
+  margin-top: 111px;
+  padding-bottom: 128px;
 }
 .footer__text {
   max-width: 69%;
@@ -13,4 +13,16 @@
 }
 .footer__link {
   color: #c5c5c5;
+}
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 72px;
+  }
+  .footer__text {
+    max-width: 83%;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
 }
